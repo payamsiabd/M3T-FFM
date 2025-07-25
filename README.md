@@ -1,1 +1,1 @@
-# m3t_ffm
+# Multi-Modal Multi-Task Federated Foundation Model.
