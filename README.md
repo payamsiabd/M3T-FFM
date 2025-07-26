@@ -25,11 +25,8 @@ The HF-FM system's network model is inspired by and extends the following works:
 
 ## 🛠️ Structure
 
-- `train.py`: Federated training pipeline (multi-user, multi-task)
-- `simulator.py`: Network and energy/latency simulator
-- `model/`: Adapter-based ViLT model architecture
-- `results/`: Logs, accuracy/loss metrics, energy traces
-- `utils/`: Data loaders, clustering logic, and helper functions
+- `models/`: Adapter-based ViLT model architecture
+
 
 ## 📦 Installation
 
