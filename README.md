@@ -68,7 +68,6 @@ Preprocess datasets:
 
 ```bash
 python datasets/dataset_generator_gqa_balanced.py
-python datasets/dataset_generator_vizwiz_balanced.py
 python datasets/dataset_generator_art_balanced.py
 ```
 
@@ -98,10 +97,7 @@ This project is released under the MIT License.
 
 ## 👤 Author
 
-**Payam Abdisarabshali** – Ph.D. Student, Electrical Engineering, SUNY Buffalo
+**Payam Abdisarabshali** – Ph.D. Student, Electrical Engineering, The State University of New York at Buffalo
 
 For questions or collaborations, feel free to contact via GitHub or [Google Scholar](https://scholar.google.com/citations?user=ksQpR00AAAAJ&hl=en).
 
----
-
-Enjoy exploring the future of federated foundation models! 🚀
