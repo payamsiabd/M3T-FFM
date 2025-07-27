@@ -48,17 +48,43 @@ HFFM/
 
 ```bash
 git clone https://github.com/payamsiabd/M3T-FFM.git
+```
 
+### 1. Install Dependencies
+
+```bash
 pip install -r requirements.txt
 ```
 
-## 🚀 Run Training
+Ensure PyTorch with GPU support is installed and datasets are available locally.
+
+### Datasets
+The experiments in this project are conducted on two Visual Question Answering (VQA) datasets:
+
+- **ArtVQA**: [ArtVQA (AQUA subset)](https://github.com/noagarcia/ArtVQA/tree/master/AQUA)
+- **GQA**: [GQA Dataset](https://cs.stanford.edu/people/dorarad/gqa/download.html)
+
+### 2. Prepare Datasets
+
+Preprocess datasets:
 
 ```bash
-python train.py --config configs/hf_fm.yaml
+python datasets/dataset_generator_gqa_balanced.py
+python datasets/dataset_generator_vizwiz_balanced.py
+python datasets/dataset_generator_art_balanced.py
 ```
 
-You can also change adapter mode, task type, or aggregation settings via the configuration file.
+### 3. Run Training
+
+#### Local FL (no aggregation):
+```bash
+python methods/main_local.py
+```
+
+#### Hierarchical FL (e.g., HF-FM):
+```bash
+python methods/main_hierarchy.py
+```
 
 ## 📊 Results
 
