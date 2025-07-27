@@ -25,7 +25,22 @@ The HF-FM system's network model is inspired by and extends the following works:
 
 ## 🛠️ Structure
 
-- `models/`: Adapter-based ViLT model architecture
+  HFFM/
+  ├── core/                    # Core logic and architecture
+  │   ├── datasets.py          # Dataset utilities and loaders
+  │   ├── models.py            # Adapter-based model definitions
+  │   ├── network.py           # Communication and aggregation logic
+  │   └── utils.py             # Miscellaneous helpers
+  │
+  ├── datasets/               # Dataset generators and vocab files
+  │   ├── dataset_generator_*.py  # Scripts to generate federated versions of datasets
+  │   └── *_vocab_balanced.py     # Balanced vocab files for ART, GQA, and VizWiz
+  │
+  ├── methods/                # FL training strategies and results
+  │   ├── results/            # Folder for logs, plots, and metrics
+  │   ├── main_hierarchy.py   # Entry point for hierarchical FL simulation
+  │   ├── main_local.py       # Entry point for local-only FL (no hierarchy)
+  │   └── table_generator.py  # Utilities for creating result tables
 
 
 ## 📦 Installation
