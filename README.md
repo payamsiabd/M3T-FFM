@@ -85,11 +85,19 @@ python methods/main_hierarchy.py
 
 ## 📊 Results
 
-All accuracy/loss/energy/latency traces are stored in `results/`. Plots and comparisons are automatically generated for:
+Below is the summary of performance on multi-modal multi-task datasets using various aggregation strategies.
 
-- Accuracy vs. Epoch
-- Loss vs. Energy/Latency
-- System-wide performance under different aggregation schemes
+| **Method**                              | **Latency (s)** | **Energy (kJ)** | **Test Accuracy (%)** |
+|----------------------------------------|-----------------|-----------------|------------------------|
+| FFM with Conventional Star Topology    | 12.10           | 387.20          | 37.89                  |
+| FFM with Only Edge Aggregation         | 3.59            | 59.25           | 27.48 †                |
+| FFM with Only Edge Aggregation + D2D   | 2.00            | 14.75           | 27.48 †                |
+| `HF-FM` (E<sub>Agg</sub>=2)            | 9.58            | 107.65          | **38.65** ★            |
+| `HF-FM` (E<sub>Agg</sub>=8)            | 5.04            | 71.35           | 36.25 ◁                |
+| `HF-FM + D2D` (E<sub>Agg</sub>=2)      | 8.86            | 67.57           | **38.65** ★            |
+| `HF-FM + D2D` (E<sub>Agg</sub>=8)      | 3.66            | 27.92           | 36.25 ◁                |
+
+†, ◁, ★ denote statistically indistinguishable results in accuracy.
 
 ## 📄 License
 
