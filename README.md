@@ -23,25 +23,26 @@ The HF-FM system's network model is inspired by and extends the following works:
 - (https://arxiv.org/abs/2404.06324): Dynamic D2D-Assisted Federated Learning over O-RAN: Performance Analysis, MAC Scheduler, and Asymmetric User Selection
 - (https://ieeexplore.ieee.org/document/9148862): Client-Edge-Cloud Hierarchical Federated Learning
 
-## 🛠️ Structure
+## 📁 Project Structure
 
-  HFFM/
-  ├── core/                    # Core logic and architecture
-  │   ├── datasets.py          # Dataset utilities and loaders
-  │   ├── models.py            # Adapter-based model definitions
-  │   ├── network.py           # Communication and aggregation logic
-  │   └── utils.py             # Miscellaneous helpers
-  │
-  ├── datasets/               # Dataset generators and vocab files
-  │   ├── dataset_generator_*.py  # Scripts to generate federated versions of datasets
-  │   └── *_vocab_balanced.py     # Balanced vocab files for ART, GQA, and VizWiz
-  │
-  ├── methods/                # FL training strategies and results
-  │   ├── results/            # Folder for logs, plots, and metrics
-  │   ├── main_hierarchy.py   # Entry point for hierarchical FL simulation
-  │   ├── main_local.py       # Entry point for local-only FL (no hierarchy)
-  │   └── table_generator.py  # Utilities for creating result tables
-
+```
+HFFM/
+├── core/
+│   ├── datasets.py              # Dataset loading and preprocessing
+│   ├── models.py                # Adapter-based model definitions
+│   ├── network.py               # Communication & aggregation logic
+│   └── utils.py                 # Helper functions
+│
+├── datasets/
+│   ├── dataset_generator_*.py   # Scripts to generate balanced datasets
+│   ├── *_vocab_balanced.py      # Balanced vocab files for tasks (ART, GQA, VizWiz)
+│
+├── methods/
+│   ├── main_hierarchy.py        # Entry point for hierarchical FL
+│   ├── main_local.py            # Entry point for local-only training
+│   ├── table_generator.py       # Summarize evaluation metrics
+│   └── results/                 # Folder to store results and logs
+```
 
 ## 📦 Installation
 
