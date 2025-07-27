@@ -58,14 +58,12 @@ pip install -r requirements.txt
 
 Ensure PyTorch with GPU support is installed and datasets are available locally.
 
-### Datasets
+### 2. Prepare Datasets
 The experiments in this project are conducted on two Visual Question Answering (VQA) datasets:
 
 - **ArtVQA**: [ArtVQA (AQUA subset)](https://github.com/noagarcia/ArtVQA/tree/master/AQUA)
 - **GQA**: [GQA Dataset](https://cs.stanford.edu/people/dorarad/gqa/download.html)
-
-### 2. Prepare Datasets
-
+- 
 Preprocess datasets:
 
 ```bash
