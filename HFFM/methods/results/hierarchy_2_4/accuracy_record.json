@@ -1,0 +1,10 @@
+[
+    {
+        "epoch": 1,
+        "cluster": 0,
+        "user": 0,
+        "task": 0,
+        "loss": 3.04570209980011,
+        "accuracy": 5.0
+    }
+]
