@@ -9,7 +9,7 @@ random.seed(SEED)
 
 # ─── CONFIG ─────────────────────────────────────────────────────────────────────
 ann_file      = "./art_ann.json"
-img_dir       = "/Users/payamabd/Documents/Research/AAAI/code/FedDAT-main/src/train/data/AQUA/SemArt/Images/"
+img_dir       = "DATA LINK /AQUA/SemArt/Images/"
 out_dir       = "art"
 labels_to_use = None    # None → pick top-K; or set to a list e.g. ["pipe","white","yes"]
 top_k_labels  = 10      # if labels_to_use is None, pick this many most frequent
