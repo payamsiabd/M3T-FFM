@@ -1,4 +1,4 @@
-# Hierarchical Multi-Modal Multi-Task Federated Foundation Model (HF-FM)
+# Hierarchical Multi-Modal Multi-Task Federated Foundation Model (HF-FM) with D2D Cooperation
 
 This repository contains the official implementation for **Hierarchical Multi-Modal Multi-Task Federated Foundation Model (HF-FM)**, a system that integrates vision-language foundation models with hierarchical federated learning (FL) to enable efficient, scalable, and personalized training across heterogeneous edge networks.
 
