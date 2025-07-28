@@ -9,7 +9,7 @@ random.seed(SEED)
 
 # ─── CONFIG ─────────────────────────────────────────────────────────────────────
 ann_file      = "./vizwiz_train.json"
-img_dir       = "../data/vizwiz/VG_100K/"
+img_dir       = "DATA LINK /vizwiz/VG_100K/"
 out_dir       = "vizwiz"
 labels_to_use = None    # None → pick top-K; or set to a list e.g. ["pipe","white","yes"]
 top_k_labels  = 100      # if labels_to_use is None, pick this many most frequent
