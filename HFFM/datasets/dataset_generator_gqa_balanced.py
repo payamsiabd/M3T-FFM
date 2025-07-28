@@ -9,7 +9,7 @@ random.seed(SEED)
 
 # ─── CONFIG ─────────────────────────────────────────────────────────────────────
 ann_file      = "./gqa_vqa_formatted.json"
-img_dir       = "/Users/payamabd/Documents/Research/AAAI/code/FedDAT-main/src/train/data/vg/VG_100K/"
+img_dir       = "DATA LINK /vg/VG_100K/"
 out_dir       = "gqa"
 labels_to_use = None    # None → pick top-K; or set to a list e.g. ["pipe","white","yes"]
 top_k_labels  = 20      # if labels_to_use is None, pick this many most frequent
