@@ -64,7 +64,7 @@ The experiments in this project are conducted on two Visual Question Answering (
 - **ArtVQA**: [ArtVQA (AQUA subset)](https://github.com/noagarcia/ArtVQA/tree/master/AQUA)
 - **GQA**: [GQA Dataset](https://cs.stanford.edu/people/dorarad/gqa/download.html)
 - **Anotation files**: [Anotations](https://drive.google.com/drive/folders/1wlx22Y8KGPmrRFELj2su8CSU5dM0Iu_1?usp=drive_link)
-- 
+  
 Preprocess datasets:
 
 ```bash
