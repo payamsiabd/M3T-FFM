@@ -263,7 +263,7 @@ def execute():
     parser.add_argument("--n_users",               type=int,   default=40)
     parser.add_argument("--alpha",                 type=float, default=0.1)
     parser.add_argument("--is_test",               action="store_true")
-    parser.add_argument("--epochs",                type=int,   default=200)
+    parser.add_argument("--epochs",                type=int,   default=50)
     parser.add_argument("--cons_rounds",           type=int,   default=100)
     parser.add_argument("--n_clusters",            type=int,   default=10)
     parser.add_argument("--users_per_cluster",     type=int,   default=4)
