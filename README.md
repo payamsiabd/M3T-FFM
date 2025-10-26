@@ -92,9 +92,9 @@ Below is the summary of performance on multi-modal multi-task datasets using var
 
 | **Method**                              | **Latency (s)** | **Energy (kJ)** | **Test Accuracy (%)** |
 |----------------------------------------|-----------------|-----------------|------------------------|
-| FFM with Conventional Star Topology    | 12.10           | 387.20          | 37.89                  |
-| FFM with Only Edge Aggregation         | 3.59            | 59.25           | 27.48 †                |
-| FFM with Only Edge Aggregation + D2D   | 2.00            | 14.75           | 27.48 †                |
+| FedFM with Conventional Star Topology    | 12.10           | 387.20          | 37.89                  |
+| FedFM with Only Edge Aggregation         | 3.59            | 59.25           | 27.48 †                |
+| FedFM with Only Edge Aggregation + D2D   | 2.00            | 14.75           | 27.48 †                |
 | `H-FedFM` (E<sub>Agg</sub>=2)            | 9.58            | 107.65          | **38.65** ★            |
 | `H-FedFM` (E<sub>Agg</sub>=8)            | 5.04            | 71.35           | 36.25 ◁                |
 | `H-FedFM + D2D` (E<sub>Agg</sub>=2)      | 8.86            | 67.57           | **38.65** ★            |
