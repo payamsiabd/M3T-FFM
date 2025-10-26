@@ -1,10 +1,10 @@
-# Hierarchical Multi-Modal Multi-Task Federated Foundation Model (HF-FM) with D2D Cooperations
+# Hierarchical Multi-Modal Multi-Task Federated Foundation Model (H-FedFM) with D2D Cooperations
 
-This repository contains the official implementation for **Hierarchical Multi-Modal Multi-Task Federated Foundation Model (HF-FM)**, a system that integrates vision-language foundation models with hierarchical federated learning (FL) to enable efficient, scalable, and personalized training across heterogeneous edge networks.
+This repository contains the official implementation for **Hierarchical Multi-Modal Multi-Task Federated Foundation Model (H-FedFM)**, a system that integrates vision-language foundation models with hierarchical federated learning (FL) to enable efficient, scalable, and personalized training across heterogeneous edge networks.
 
 ## 🔍 Overview
 
-HF-FM is designed to support diverse **modalities** (e.g., vision, language), multiple **tasks** (e.g., classification, grounding, captioning), and federated **hierarchies** (users → edge → cloud). It uses modular adapters and task heads to support dynamic task execution and personalization across users, edge nodes, and cloud servers.
+H-FedFM is designed to support diverse **modalities** (e.g., vision, language), multiple **tasks** (e.g., classification, grounding, captioning), and federated **hierarchies** (users → edge → cloud). It uses modular adapters and task heads to support dynamic task execution and personalization across users, edge nodes, and cloud servers.
 
 Key features:
 
@@ -16,7 +16,7 @@ Key features:
 
 ## 🌐 Network Model
 
-The HF-FM system's network model is inspired by and extends the following works:
+The H-FedFM system's network model is inspired by and extends the following works:
 
 - (https://ieeexplore.ieee.org/abstract/document/9705093): Multi-Stage Hybrid Federated Learning Over Large-Scale D2D-Enabled Fog Networks
 - (https://ieeexplore.ieee.org/document/10304380): Delay-Aware Hierarchical Federated Learning
@@ -81,7 +81,7 @@ python datasets/art_vocab_balanced.py
 python methods/main_local.py
 ```
 
-#### Hierarchical FL (e.g., HF-FM):
+#### Hierarchical FL (e.g., H-FedFM):
 ```bash
 python methods/main_hierarchy.py
 ```
@@ -95,10 +95,10 @@ Below is the summary of performance on multi-modal multi-task datasets using var
 | FFM with Conventional Star Topology    | 12.10           | 387.20          | 37.89                  |
 | FFM with Only Edge Aggregation         | 3.59            | 59.25           | 27.48 †                |
 | FFM with Only Edge Aggregation + D2D   | 2.00            | 14.75           | 27.48 †                |
-| `HF-FM` (E<sub>Agg</sub>=2)            | 9.58            | 107.65          | **38.65** ★            |
-| `HF-FM` (E<sub>Agg</sub>=8)            | 5.04            | 71.35           | 36.25 ◁                |
-| `HF-FM + D2D` (E<sub>Agg</sub>=2)      | 8.86            | 67.57           | **38.65** ★            |
-| `HF-FM + D2D` (E<sub>Agg</sub>=8)      | 3.66            | 27.92           | 36.25 ◁                |
+| `H-FedFM` (E<sub>Agg</sub>=2)            | 9.58            | 107.65          | **38.65** ★            |
+| `H-FedFM` (E<sub>Agg</sub>=8)            | 5.04            | 71.35           | 36.25 ◁                |
+| `H-FedFM + D2D` (E<sub>Agg</sub>=2)      | 8.86            | 67.57           | **38.65** ★            |
+| `H-FedFM + D2D` (E<sub>Agg</sub>=8)      | 3.66            | 27.92           | 36.25 ◁                |
 
 †, ◁, ★ denote statistically indistinguishable results in accuracy.
 
